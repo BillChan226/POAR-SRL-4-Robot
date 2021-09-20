@@ -56,11 +56,11 @@ def plotRepresentation(states, rewards, name="Learned State Representation",
     :param true_states: project a 1D predicted states onto the ground_truth
     """
     state_dim = states.shape[1]
-    #if state_dim != 1 and (fit_pca or state_dim > 3):
-    if state_dim != 1 and (fit_pca or state_dim > 2):
+    if state_dim != 1 and (fit_pca or state_dim > 3):
+    #if state_dim != 1 and (fit_pca or state_dim > 2):
         name += " (PCA)"
-        #n_components = min(state_dim, 3)
-        n_components = min(state_dim, 2)
+        n_components = min(state_dim, 3)
+        #n_components = min(state_dim, 2)
         print("Fitting PCA with {} components".format(n_components))
         states = PCA(n_components=n_components).fit_transform(states)
     if state_dim == 1:
@@ -71,8 +71,8 @@ def plotRepresentation(states, rewards, name="Learned State Representation",
     elif state_dim == 2:
         plot2dRepresentation(states, rewards, name, add_colorbar, path, cmap)
     else:
-        #plot3dRepresentation(states, rewards, name, add_colorbar, path, cmap)
-        plot2dRepresentation(states, rewards, name, add_colorbar, path, cmap)
+        plot3dRepresentation(states, rewards, name, add_colorbar, path, cmap)
+        #plot2dRepresentation(states, rewards, name, add_colorbar, path, cmap)
 
 
 def plot2dRepresentation(states, rewards, name="Learned State Representation",
