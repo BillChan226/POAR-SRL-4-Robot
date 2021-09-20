@@ -1,0 +1,20 @@
+{
+  "batch-size": 64,
+  "epochs": 1,
+  "knn-samples": 200,
+  "knn-seed": 1,
+  "l1-reg": 0,
+  "training-set-size": 600,
+  "learning-rate": 0.001,
+  "losses": ["priors"],
+  "model-type": "custom_cnn",
+  "n-neighbors": 5,
+  "n-to-plot": 5,
+  "priors": [
+    "Proportionality",
+    "Temporal",
+    "Causality",
+    "Repeatability"
+  ],
+  "multi-view": true
+}

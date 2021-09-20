@@ -1,0 +1,23 @@
+{
+  "batch-size": 256,
+  "data-folder": "staticButtonSimplest",
+  "epochs": 1,
+  "experiment-name": "modelY2017-M11-D09-H11M28S32-resnet-ProTemCauRep-ST-DIM4-SEED1-priors",
+  "knn-samples": 5,
+  "knn-seed": 1,
+  "l1-reg": 0,
+  "learning-rate": 0.001,
+  "log-folder": "logs/staticButtonSimplest/modelY2017-M11-D09-H11M28S32-resnet-ProTemCauRep-ST-DIM4-SEED1-priors",
+  "losses": ["priors"],
+  "model-type": "resnet",
+  "n-neighbors": 5,
+  "priors": [
+    "Proportionality",
+    "Temporal",
+    "Causality",
+    "Repeatability"
+  ],
+  "seed": 1,
+  "state-dim": 4,
+  "training-set-size": -1
+}
