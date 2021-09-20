@@ -117,11 +117,12 @@ class POAR_MMD(ActorCriticRLModel):
         self.episode_reward = None
         self.srl_loss_list = None
         self.target_domain = None
-        self.state_graph_path = "./Reconstruction/OmniRobot4/"
+        self.state_graph_path = "/cloud/DATA_BACKUP/robotics-rl-srl/Reconstruction/Test/"
+        self.state_graph_path = ""
         self.plot_state_graph = state_graph
         self.ground_truth_dim = 0
-        self.clear_batch_to_plot = 30
-        self.save_frequency = 1
+        self.clear_batch_to_plot = 1000
+        self.save_frequency = 2
         if "domain" in self.srl_weight and self.srl_weight["domain"] > 0:
             demonstration_path = demo_path
             #demonstration_path = "/home/tete/work/robotics-rl-srl/srl_zoo/Ground_truth/Jaka_ground_truth.pickle"

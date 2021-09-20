@@ -72,7 +72,7 @@ class OmniRobotEnv(SRLGymEnv):
     :param srl_pipe: (Queue, [Queue]) contains the input and output of the SRL model
     """
 
-    def __init__(self, renders=True, name="Omnirobot", is_discrete=True, save_path='srl_zoo/data/', state_dim=-1,
+    def __init__(self, renders=False, name="Omnirobot", is_discrete=True, save_path='srl_zoo/data/', state_dim=-1,
                  learn_states=False, srl_model="raw_pixels", record_data=False, action_repeat=1, random_target=True,
                  shape_reward=False, simple_continual_target=False, circular_continual_move=False,
                  square_continual_move=False, eight_continual_move=False, short_episodes=False,
