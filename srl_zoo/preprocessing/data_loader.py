@@ -45,6 +45,7 @@ def preprocessImage(image, convert_to_rgb=True, apply_occlusion=False, occlusion
     :return: (np.ndarray)
     """
     # Resize
+    #print('empty',image.shape())
     im = cv2.resize(image, (IMAGE_WIDTH, IMAGE_HEIGHT), interpolation=cv2.INTER_AREA)
     # Convert BGR to RGB
     if convert_to_rgb:

@@ -85,7 +85,7 @@ Specify `--run-policy` with `ppo2` and '--no-record-data' (here it means we don'
 ### Decoupling Strategy ###
 For decoupling strategy, the training pipeline is as followed:
 + Collect raw visual data using [data_generator](https://github.com/BillChan226/POAR-SRL-4-Robot/blob/poar/environments/dataset_generator.py)
-+ Train an SRL model using [/srl_zoo/train](https://github.com/araffin/srl-zoo/blob/438a05ab625a2c5ada573b47f73469d92de82132/train.py)
++ Train an SRL model using [/srl_zoo/train](https://github.com/BillChan226/POAR-SRL-4-Robot/blob/poar/srl_zoo/train.py)
 + Register the trained SRL model in the [config file](https://github.com/BillChan226/POAR-SRL-4-Robot/tree/poar/config)
 + Train your RL agent
 
