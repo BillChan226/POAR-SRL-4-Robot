@@ -1,0 +1,361 @@
+<robot
+  name="Zu3">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.95690483413759E-05 -0.00173310503254305 -0.039882272878827"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0.0045688691265474"
+        ixy="6.94206801829612E-07"
+        ixz="-2.70287850851623E-06"
+        iyy="0.00449361461372396"
+        iyz="-3.92841672385431E-05"
+        izz="0.00624031653552083" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="7.11263397335683E-06 0.00217822178706876 -0.0149669059830168"
+        rpy="0 0 0" />
+      <mass
+        value="2.32744879445344" />
+      <inertia
+        ixx="0.00458147343407386"
+        ixy="1.48173447266549E-05"
+        ixz="-1.22875547954071E-06"
+        iyy="0.00454359720683469"
+        iyz="-3.06997251326517E-05"
+        izz="0.00363214903311472" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0645"
+      rpy="-1.2246E-16 -5.721E-32 -4.6716E-16" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.119793596970604 8.58639282073914E-06 -0.102397627385994"
+        rpy="0 0 0" />
+      <mass
+        value="5.95378231056391" />
+      <inertia
+        ixx="0.0106282836293239"
+        ixy="2.29382670166062E-05"
+        ixz="-0.000911073241596094"
+        iyy="0.0804164638556798"
+        iyz="-2.47681280688607E-06"
+        izz="0.0779892876387226" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 4.6716E-16" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.129240666536215 -9.0720152644122E-05 -0.014357405937694"
+        rpy="0 0 0" />
+      <mass
+        value="2.99370623962181" />
+      <inertia
+        ixx="0.00375122418749307"
+        ixy="3.0222385910835E-05"
+        ixz="0.00143595144649744"
+        iyy="0.0304577469052334"
+        iyz="1.80724965262349E-06"
+        izz="0.0293178341594524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J3"
+    type="continuous">
+    <origin
+      xyz="0.246 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="0.000241526484683341 -0.0325144102286034 0.00192585885719938"
+        rpy="0 0 0" />
+      <mass
+        value="1.16925259073626" />
+      <inertia
+        ixx="0.00173057761809281"
+        ixy="-5.81059937365353E-06"
+        ixz="2.07389621178962E-06"
+        iyy="0.000991339747095069"
+        iyz="-8.39621020255761E-05"
+        izz="0.00170641007481186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J4"
+    type="continuous">
+    <origin
+      xyz="0.228 0 -0.113"
+      rpy="0 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="0.000197046850542781 0.0226924862530863 -0.00183338030328768"
+        rpy="0 0 0" />
+      <mass
+        value="1.30755746948789" />
+      <inertia
+        ixx="0.00285036503364272"
+        ixy="2.02988590629697E-06"
+        ixz="-2.9472432087774E-06"
+        iyy="0.00109173403124772"
+        iyz="-7.81744010215167E-05"
+        izz="0.00282378446902515" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J5"
+    type="continuous">
+    <origin
+      xyz="0 -0.1175 0"
+      rpy="1.5708 -3.2245E-17 1.164E-16" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="-0.000117639495146871 -8.07001820749137E-05 -0.0132366598443958"
+        rpy="0 0 0" />
+      <mass
+        value="0.507738406221693" />
+      <inertia
+        ixx="0.000208846698087936"
+        ixy="-8.51820910180099E-07"
+        ixz="1.66864867720948E-07"
+        iyy="0.000211905205869407"
+        iyz="-8.18043220133994E-07"
+        izz="0.000360986690973954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Zu3/meshes/6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="J6"
+    type="continuous">
+    <origin
+      xyz="0 0.105 0"
+      rpy="-1.5708 -1.164E-16 -3.2245E-17" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>

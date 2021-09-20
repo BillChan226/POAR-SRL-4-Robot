@@ -1,0 +1,5 @@
+[submodule "srl_zoo"]
+	path = srl_zoo
+	branch = master
+	url = https://github.com/araffin/srl-zoo.git
+

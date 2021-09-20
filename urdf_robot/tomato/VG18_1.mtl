@@ -1,0 +1,68 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl VG17lef2
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18lef2.png
+map_d VG18lef2.png
+
+newmtl VG17lef3
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18lef3.png
+map_d VG18lef3.png
+
+newmtl VG17flw3
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18flw3.png
+map_d VG18flw3.png
+
+newmtl VG17flw1
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18flw1.png
+map_d VG18flw1.png
+
+newmtl VG17flw2
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18flw2.png
+map_d VG18flw2.png
+
+newmtl VG17lef1
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18lef1.png
+map_d VG18lef1.png
+
+newmtl VG17brn1
+Ns 50.781250
+illum 2
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+map_Kd VG18brn1.png

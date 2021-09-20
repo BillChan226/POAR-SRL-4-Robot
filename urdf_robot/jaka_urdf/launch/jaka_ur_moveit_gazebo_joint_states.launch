@@ -1,0 +1,20 @@
+<launch>
+  <!-- Load joint controller configurations from YAML file to parameter server -->
+  <rosparam file="$(find jaka_ur_description_pkg)/config/jaka_ur_gazebo_joint_states.yaml" command="load"/>
+
+
+  <node name="joint_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+		output="screen" ns="/jakaUr" args="joint_state_controller" />
+
+  <!-- convert joint states to TF transforms for rviz, etc -->
+  <!--node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+	respawn="false" output="screen"/-->
+    <!--remap from="/joint_states" to="/jaka_ur/joint_states" /-->
+  <remap from="/joint_states" to="/jakaUr/joint_states" />
+    <param name="publish_frequency" type="double" value="30.0" />
+
+  <!--/node-->
+
+</launch>
+
+

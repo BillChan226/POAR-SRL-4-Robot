@@ -1,0 +1,7 @@
+<launch>
+	<rosparam file="$(find jaka_ur_description_pkg)/config/trajectory_control.yaml" command="load"/>
+
+  <node name="jaka_ur_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/jakaUr" args="jaka_joint_controller 						      "/>
+
+</launch>
