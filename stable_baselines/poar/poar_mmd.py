@@ -23,7 +23,6 @@ import random
 #from state_representation.episode_saver import LogRLStates
 sns.set()
 
-
 class POAR_MMD(ActorCriticRLModel):
     """
     Proximal Policy Optimization algorithm (GPU version).
