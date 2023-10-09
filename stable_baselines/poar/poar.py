@@ -21,7 +21,6 @@ from mpl_toolkits.mplot3d import Axes3D
 #from state_representation.episode_saver import LogRLStates
 sns.set()
 
-
 class POAR(ActorCriticRLModel):
     """
     Proximal Policy Optimization algorithm (GPU version).
