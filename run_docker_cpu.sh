@@ -1,6 +1,7 @@
 #!/bin/bash
 # Launch an experiment using the docker cpu image
 
+
 cmd_line="$@"
 
 echo "Executing in the docker (cpu image):"
