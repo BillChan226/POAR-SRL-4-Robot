@@ -16,7 +16,6 @@ import yaml
 from stable_baselines.common import set_global_seeds
 from visdom import Visdom
 from shutil import copyfile
-
 from environments.registry import registered_env
 from environments.srl_env import SRLGymEnv
 from rl_baselines import AlgoType, ActionType
