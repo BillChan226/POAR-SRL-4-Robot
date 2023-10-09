@@ -2,8 +2,7 @@
 
 This repository is based on a fork from [S-RL Repo](https://github.com/araffin/robotics-rl-srl) [<sup>2</sup>](#refer-anchor). In our implementation, we further integrate the SRL model with RL throughout the course of training,
 where both models are trained simultaneously to overcome previous obstacles in decoupling methods [<sup>1</sup>](#refer-anchor) such as over-fitting and incomplete learned states.
-This repository provides the implementation of algorithm and environment simulator that we propose in the paper "[Efficient State Representation Learning for Dynamic Robotic Scenarios
-](https://arxiv.org/abs/2109.08642)" which we submit for review in ICRA 2022.
+This is the accompanying repository that provides the implementation of algorithm and environment simulator that we propose in the paper POAR: Efficient Policy Optimization via Online Abstract State Representation Learning which we submit to Journal of Intelligent & Robotic Systems for review.
 
 With this repository, we can both evaluate the prevailing decoupling State Representation Learning methods and the coupling model **POAR** (Policy Optimization via Abstract Representation), together with reinforcement learning. The previous [S-RL Repo](https://github.com/araffin/robotics-rl-srl) integrates (automatic logging, plotting, saving, loading of trained agent) various RL algorithms (PPO, A2C, ARS, ACKTR, DDPG, DQN, ACER, CMA-ES, SAC, TRPO) from [Stable Baselines](https://github.com/araffin/rl-baselines-zoo) along with various decoupling SRL priors (see [SRL Repo](https://github.com/araffin/srl-zoo)) in an efficient way (1 Million steps in 1 Hour with 8-core cpu and 1 Titan X GPU).
 
@@ -286,13 +285,11 @@ This work was supported by Shanghai Agriculture Applied Technology Development P
 ## Citation
 To use this repository, please cite our paper:
 ```
-@misc{chen2021efficient,
-title={Efficient State Representation Learning for Dynamic Robotic Scenarios},
-author={Zhaorun Chen and Liang Gong and Te Sun and Binhao Chen and Shenghan Xie and David Filliat and Natalia Díaz-Rodríguez},
-year={2021},
-eprint={2109.08642},
-archivePrefix={arXiv},
-primaryClass={cs.RO}
+@onlinerepository{POAR-SRL-4-Robot,
+title={POAR: Efficient Policy Optimization via Online Abstract State Representation Learning},
+author={Zhaorun Chen; Liang Gong; Binhao Chen; Siqi Fan; Yuan Tan; Te Sun; David Filliat; Natalia Díaz-Rodríguez; Chengliang Liu},
+year={2023},
+url={https://github.com/BillChan226/POAR-SRL-4-Robot}
 }
 ```
 
