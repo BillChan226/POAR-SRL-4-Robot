@@ -18,7 +18,6 @@ class POARModel(StableBaselinesRLObject):
     def __init__(self):
         super(POARModel, self).__init__(name="poar", model_class=POAR_MMD)
 
-
     def customArguments(self, parser):
         super().customArguments(parser)
         parser.add_argument('--num-cpu', help='Number of processes', type=int, default=1)
