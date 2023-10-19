@@ -1,12 +1,11 @@
 #!/bin/bash
-# 为ICRA会议论文准备的实验流程
-
+# preparing for IEEE Intelligent Systems
 #env="MobileRobotGymEnv-v0"
 env="OmnirobotEnv-v0"
 
 cd ..
 #
-# 2021/09/02
+# 2023/10/10
 # 图一：各算法对比
 # 涉及到的算法：a2c acer ppo2 srl_split_a1r5i2f1 srl_combination_a1r5i2f1 srl_split_a10r5i1f1 srl_decoupling_split srl_decoupling_combination 缺：增加MMD loss的模型
 #
