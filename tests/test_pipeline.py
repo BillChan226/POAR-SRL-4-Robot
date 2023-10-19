@@ -1,7 +1,6 @@
 from __future__ import print_function, division, absolute_import
 
 import subprocess
-
 import pytest
 
 from environments import ThreadingType
