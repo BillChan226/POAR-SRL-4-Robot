@@ -2,7 +2,7 @@
 
 This repository is based on a fork from [S-RL Repo](https://github.com/araffin/robotics-rl-srl) [<sup>2</sup>](#refer-anchor). In our implementation, we further integrate the SRL model with RL throughout the course of training,
 where both models are trained simultaneously to overcome previous obstacles in decoupling methods [<sup>1</sup>](#refer-anchor) such as over-fitting and incomplete learned states.
-This is the accompanying repository that provides the implementation of algorithm and environment simulator that we propose in the paper POAR: Efficient Policy Optimization via Online Abstract State Representation Learning which we submit to Journal of Intelligent & Robotic Systems for review.
+This is the accompanying repository that provides the implementation of algorithm and environment simulator that we propose in the paper POAR: Efficient Policy Optimization via Online Abstract State Representation Learning which we submit to IEEE Intelligent Systems for review.
 
 With this repository, we can both evaluate the prevailing decoupling State Representation Learning methods and the coupling model **POAR** (Policy Optimization via Abstract Representation), together with reinforcement learning. The previous [S-RL Repo](https://github.com/araffin/robotics-rl-srl) integrates (automatic logging, plotting, saving, loading of trained agent) various RL algorithms (PPO, A2C, ARS, ACKTR, DDPG, DQN, ACER, CMA-ES, SAC, TRPO) from [Stable Baselines](https://github.com/araffin/rl-baselines-zoo) along with various decoupling SRL priors (see [SRL Repo](https://github.com/araffin/srl-zoo)) in an efficient way (1 Million steps in 1 Hour with 8-core cpu and 1 Titan X GPU).
 
