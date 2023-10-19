@@ -1,6 +1,6 @@
 # POAR-SRL-4-Robot: An efficient state representation approach for robotic scenarios
 
-This repository is based on a fork from [S-RL Repo](https://github.com/araffin/robotics-rl-srl) [<sup>2</sup>](#refer-anchor). In our implementation, we further integrate the SRL model with RL throughout the course of training,
+This repository is an integrated SRL toolbox with the SRL model incorporating into RL throughout the course of training,
 where both models are trained simultaneously to overcome previous obstacles in decoupling methods [<sup>1</sup>](#refer-anchor) such as over-fitting and incomplete learned states.
 This is the accompanying repository that provides the implementation of algorithm and environment simulator that we propose in the paper POAR: Efficient Policy Optimization via Online Abstract State Representation Learning which we submit to IEEE Intelligent Systems for review.
 
